@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>UI - Admin Panel</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="phone">
+          <div class="phone__img">
+            <img src="./images/phone.png" alt="phone" />
+          </div>
+          <span class="phone__num">132</span>
+        </div>
+        <div class="search">
+          <i class=""></i>
+          <input type="text" class="search_input" placeholder="Search" />
+        </div>
+        <div class="operation">
+          <div class="icon">
+            <a href="#diagram" class="diagram">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#market" class="market">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#lock" class="lock">
+              <i class="fa-regular fa-bell"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#user" class="user">
+              <i class="fa-regular fa-bell"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#setting" class="setting">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#letter" class="letter">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#notification" class="notification">
+              <i class="fa-regular fa-bell"></i>
+              <span class="notification__count">9</span>
+            </a>
+          </div>
+          <div class="profile">
+            <h5 class="profile__username">Ilya Davidoff</h5>
+            <span class="profile__role">Apple INC, Admin</span>
+          </div>
+          <div class="logout">
+            <a href="#logout">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#dashboard">Dashboard</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#payments">Payments</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#payroll">Payroll</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#templates">Templates</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/history.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#history">History</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon active" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#products">Products</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#expresspos">Express POS</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/Vector.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#anipay">Ani Pay</a>
+          </div>
+          <div class="sidebar__item">
+            <div class="sidebar__icon" href="#">
+              <img src="./images/history.png" alt="" />
+            </div>
+            <a class="sidebar__link" href="#map">Map</a>
+          </div>
+        </div>
+      </aside>
+      <div class="content">
+        <div class="topbar">
+          <div class="topbar__wrapper">
+            <div class="topbar__col">
+              <span class="topbar__col__text">На подпись</span>
+              <span class="topbar__col__count">5</span>
+            </div>
+            <div class="topbar__col">
+              <span class="topbar__col__text">Отправленные в банк</span>
+              <span class="topbar__col__count">25</span>
+            </div>
+            <div class="topbar__col">
+              <span class="topbar__col__text">Исполненные</span>
+              <span class="topbar__col__count">225</span>
+            </div>
+            <div class="topbar__col">
+              <span class="topbar__col__text">Отклоненные</span>
+              <span class="topbar__col__count">1524</span>
+            </div>
+          </div>
+        </div>
+        <article class="card__article">
+          <div class="card">
+            <div class="card__header">
+              <h2 class="card__header__title">Cards</h2>
+              <div class="card__currency">
+                <div class="card__currency__select active">
+                  <a class="card__currency__name" href="#">All</a>
+                </div>
+                <div class="card__currency__select">
+                  <a class="card__currency__name" href="#">USD</a>
+                  <span class="card__currency__amount">$2 000 000</span>
+                </div>
+                <div class="card__currency__select">
+                  <a class="card__currency__name" href="#">RUR</a>
+                  <span class="card__currency__amount">50 000 000 R</span>
+                </div>
+                <div class="card__currency__select">
+                  <a class="card__currency__name" href="#">AZN</a>
+                  <span class="card__currency__amount">50 000 &#8380;</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table__head">Kartın adı</th>
+                    <th class="table__head">Kartın nömrəsi</th>
+                    <th class="table__head">Status</th>
+                    <th class="table__head">Növü</th>
+                    <th class="table__head">Bitmə tarixi</th>
+                    <th class="table__head">Balans</th>
+                    <th class="table__head"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table__data">Classic Premium</td>
+                    <td class="table__data">4353 54** **** 5465</td>
+                    <td class="table__data">Aktiv</td>
+                    <td class="table__data">Mastercard</td>
+                    <td class="table__data">10/19</td>
+                    <td class="table__data">20 500 000 $</td>
+                    <td class="table__data actions">
+                      <div class="action__edit">
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__data">Classic Premium</td>
+                    <td class="table__data">4353 54** **** 5465</td>
+                    <td class="table__data">Aktiv</td>
+                    <td class="table__data">Mastercard</td>
+                    <td class="table__data">10/19</td>
+                    <td class="table__data">20 500 000 $</td>
+                    <td class="table__data actions">
+                      <div class="action__edit">
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__data">Classic Premium</td>
+                    <td class="table__data">4353 54** **** 5465</td>
+                    <td class="table__data">Aktiv</td>
+                    <td class="table__data">Mastercard</td>
+                    <td class="table__data">10/19</td>
+                    <td class="table__data">20 500 000 $</td>
+                    <td class="table__data actions">
+                      <div class="action__edit">
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__data">Classic Premium</td>
+                    <td class="table__data">4353 54** **** 5465</td>
+                    <td class="table__data">Aktiv</td>
+                    <td class="table__data">Mastercard</td>
+                    <td class="table__data">10/19</td>
+                    <td class="table__data">20 500 000 $</td>
+                    <td class="table__data actions">
+                      <div class="action__edit">
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__data">Classic Premium</td>
+                    <td class="table__data">4353 54** **** 5465</td>
+                    <td class="table__data">Aktiv</td>
+                    <td class="table__data">Mastercard</td>
+                    <td class="table__data">10/19</td>
+                    <td class="table__data">20 500 000 $</td>
+                    <td class="table__data actions">
+                      <div class="action__edit">
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__data">Classic Premium</td>
+                    <td class="table__data">4353 54** **** 5465</td>
+                    <td class="table__data">Aktiv</td>
+                    <td class="table__data">Mastercard</td>
+                    <td class="table__data">10/19</td>
+                    <td class="table__data">20 500 000 $</td>
+                    <td class="table__data actions">
+                      <div class="action__edit">
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                        <span class="edit__dot">.</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
