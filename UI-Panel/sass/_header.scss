@@ -47,6 +47,7 @@ header {
       display: flex;
       align-items: center;
       width: 660px;
+      justify-content: space-evenly;
       .icon {
         margin: 0 15px;
         position: relative;
@@ -107,6 +108,89 @@ header {
           text-decoration: none;
         }
       }
+    }
+    .res-menu-bar-col {
+      display: none;
+      .res-menu-bar {
+        .res-menu-bar-lines {
+          width: 35px;
+          height: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          span {
+            height: 4px;
+            margin-top: 3px;
+            border-radius: 3px;
+            background: #080a3c;
+            display: block;
+          }
+          .innerRes-menu-bar-lines {
+            position: absolute;
+            text-decoration: none;
+            font-weight: 600;
+            color: #080a3c;
+            bottom: 5px;
+            right: 11px;
+            font-size: 0;
+          }
+        }
+        .res-nav-menu {
+          .active-nav-menu-ul {
+            overflow: auto !important;
+            height: 294px !important;
+            z-index: 10 !important;
+          }
+          .nav-menu-ul {
+            transition: all 0.5s ease;
+            background-color: white;
+            box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 90px;
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            height: 0;
+            z-index: -1;
+            li {
+              position: relative;
+              a {
+                font-size: 14px;
+                padding: 14px 50px 13px;
+                display: block;
+                text-decoration: none;
+                color: #677294;
+                border-top: 1px solid #dbeefd;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1120px) {
+  // Header
+  .res-menu-bar-col {
+    display: block !important;
+  }
+  .nav-full-row {
+    display: none !important;
+  }
+  .operation {
+    display: none !important;
+  }
+  .navbar {
+    justify-content: space-around !important;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .search {
+    .search_input {
+      width: 200px !important;
     }
   }
 }

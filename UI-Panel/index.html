@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>UI - Admin Panel</title>
   </head>
   <body>
@@ -32,37 +32,39 @@
         <div class="operation">
           <div class="icon">
             <a href="#diagram" class="diagram">
-              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-solid fa-chart-simple"></i>
             </a>
           </div>
           <div class="icon">
             <a href="#market" class="market">
-              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
             </a>
           </div>
           <div class="icon">
             <a href="#lock" class="lock">
-              <i class="fa-regular fa-bell"></i>
+              <i class="fa-solid fa-lock"></i>
             </a>
           </div>
           <div class="icon">
             <a href="#user" class="user">
-              <i class="fa-regular fa-bell"></i>
+              <i class="fa-solid fa-user"></i>
             </a>
           </div>
           <div class="icon">
             <a href="#setting" class="setting">
-              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-solid fa-gear"></i>
             </a>
           </div>
           <div class="icon">
             <a href="#letter" class="letter">
-              <i class="fa-regular fa-envelope"></i>
+              <!-- <i class="fa-regular fa-envelope"></i> -->
+              <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
           <div class="icon">
             <a href="#notification" class="notification">
-              <i class="fa-regular fa-bell"></i>
+              <!-- <i class="fa-regular fa-bell"></i> -->
+              <i class="fa-solid fa-bell"></i>
               <span class="notification__count">9</span>
             </a>
           </div>
@@ -74,6 +76,30 @@
             <a href="#logout">
               <i class="fa-solid fa-arrow-right-from-bracket"></i>
             </a>
+          </div>
+        </div>
+        <div class="res-menu-bar-col">
+          <div class="res-menu-bar">
+            <a class="res-menu-bar-lines" href="#">
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <p class="innerRes-menu-bar-lines" href="#">
+                <i class="fa-solid fa-xmark"></i>
+              </p>
+            </a>
+            <div class="res-nav-menu">
+              <ul class="nav-menu-ul">
+                <li><a href="#">Diagram</a></li>
+                <li><a href="#">Market</a></li>
+                <li><a href="#">Lock</a></li>
+                <li><a href="#">User</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">Notification</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -139,6 +165,16 @@
       </aside>
       <div class="content">
         <div class="topbar">
+          <div class="res-menu-sidebar-col">
+            <div class="res-menu-sidebar">
+              <a class="res-menu-sidebar-lines" href="#">
+                <span
+                  ><i class="fa-solid fa-arrow-right sidebar-right"></i
+                ></span>
+                <span><i class="fa-solid fa-arrow-left sidebar-left"></i></span>
+              </a>
+            </div>
+          </div>
           <div class="topbar__wrapper">
             <div class="topbar__col">
               <span class="topbar__col__text">На подпись</span>
@@ -291,6 +327,7 @@
         </article>
       </div>
     </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>

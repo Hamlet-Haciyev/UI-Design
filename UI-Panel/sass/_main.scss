@@ -2,11 +2,24 @@ main {
   display: flex;
   max-width: 1440px;
   margin: 0 auto;
+  position: relative;
   .sidebar {
     width: 130px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px 0;
+    transition: all 0.5s ease;
+    &.active-sidebar{
+    width: 130px !important;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    display: block !important;
+    transition: all 0.5s ease;
+    height: 612px;
+    overflow: auto;
+
+    }
     .sidebar__wrapper {
       display: flex;
       flex-direction: column;
@@ -46,6 +59,27 @@ main {
     .topbar {
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
+      display: flex;
+      .res-menu-sidebar-col{
+        display: none;
+        .res-menu-sidebar{
+          .res-menu-sidebar-lines{
+            text-decoration: none;
+            width: 35px;
+            height: 50px;
+            display: flex;
+            position: relative;
+            line-height: 55px;
+            justify-content: center;
+            .sidebar-right{
+              font-size: 16px;
+            }
+            .sidebar-left{
+              font-size: 0px;
+            }
+          }
+        }
+      }
       .topbar__wrapper {
         display: flex;
         align-items: center;
@@ -186,4 +220,80 @@ main {
       }
     }
   }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  //Card
+  .card{
+    width: 800px !important;
+  }
+  .table__data{
+    font-size: 13px !important;
+  }
+  //Topbar
+  .topbar__wrapper{
+    width: 810px !important;
+  }
+}
+@media only screen and (max-width: 920px) {
+  //SideBar
+  .active-sidebar{
+    width: 0 !important;
+  }
+  .sidebar{
+    display: none !important;
+  }
+  .res-menu-sidebar-col {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 854px) {
+  //Card
+  .card{
+    width: 604px !important;
+  }
+  .table__data{
+    font-size: 12px !important;
+  }
+  .topbar__col{
+    font-size: 14px !important;
+    .topbar__col__count{
+      height: 25px !important;
+      min-width: 25px !important;
+      line-height: 25px !important;
+    }
+  }
+  //Topbar
+  .topbar__wrapper{
+    width: 614px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  //Topbar
+ .topbar__wrapper{
+  width: 450px !important;
+  .topbar__col{
+    font-size: 11px !important;
+  }
+ }
+ //Card
+ .card__header__title{
+  font-size: 20px !important;
+ }
+ .card__currency{
+  height: 42px !important;
+ }
+ .card__currency__select{
+  height: 42px !important;
+ }
+ .card{
+  width: 450px !important;
+ }
+ .table__head{
+  padding: 15px 6px !important;
+ }
+ .table__data{
+  padding: 6px !important;
+ }
 }
